@@ -39,6 +39,20 @@ ul {
   padding-right: 30px;
 }
 
+.block__up {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.block__up::after {
+  content: ""; /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+  display: block; /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+  width: 950px; /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+  position: absolute; /* абсолютное позиционирование для управления линиями */
+  top: 40%; /* позиционирование по вертикали */
+}
+
 /* ############################# Header ############################# */
 
 .header {
@@ -46,6 +60,7 @@ ul {
   background-attachment: center;
   padding-top: 20px;
   padding-bottom: 80px;
+  width: 100%;
 }
 
 .menu {
@@ -77,6 +92,7 @@ ul {
   letter-spacing: 5px;
   font-weight: normal;
   margin-bottom: 105px;
+  line-height: 122px;
 }
 
 .menu__button {
@@ -119,19 +135,11 @@ ul {
   overflow: hidden;
 }
 .the-editor__sup-title {
-  position: relative;
   color: #688c6b;
-  font-size: 14px;
-  letter-spacing: 1px;
 }
 
 .the-editor__sup-title::after {
-  content: ""; /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
-  display: block; /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
-  width: 880px; /* устанавливаем ширину линию. Можно использовать произвольную ширину */
-  position: absolute; /* абсолютное позиционирование для управления линиями */
   border-bottom: 2px solid #fff; /* бордер псевдо дива, т.е. сама линия */
-  top: 40%; /* позиционирование по вертикали */
   left: 250px;
 }
 
@@ -153,4 +161,47 @@ ul {
 .the-editor__img {
   width: 100%;
   margin-bottom: 60px;
+}
+
+/* ################### TRUSTED BY THE BEST ############################## */
+
+.trust {
+  background-color: #ffd300;
+}
+
+.trust__header {
+  overflow: hidden;
+  margin-bottom: 57px;
+  padding-top: 60px;
+}
+
+.trust__sup-title {
+  color: #000;
+}
+
+.trust__sup-title::after {
+  border-bottom: 2px solid #000; /* бордер псевдо дива, т.е. сама линия */
+  left: 180px;
+}
+
+.trust__title {
+  line-height: 86.5px;
+  font-size: 84px;
+  letter-spacing: 2.5px;
+  font-weight: normal;
+  max-width: 765px;
+  margin-bottom: 6px;
+}
+
+.trust__link {
+  display: block;
+  color: #4c3f00;
+  font-size: 32px;
+  line-height: 51.2px;
+  margin-bottom: 95px;
+}
+
+.trust__img {
+  width: 100%;
+  margin-bottom: 140px;
 }
