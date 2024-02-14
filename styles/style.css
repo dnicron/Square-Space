@@ -1,0 +1,156 @@
+/* ############################### Default #################################### */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* ############################# Header ############################# */
+
+.header {
+  background-color: #ffd300;
+  background-attachment: center;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  line-height: 73px;
+  margin-bottom: 220px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  margin: 0 auto;
+}
+
+.menu__item {
+}
+
+.menu__link {
+}
+
+.header__title {
+  font-size: 150px;
+  max-width: 1000px;
+  letter-spacing: 5px;
+  font-weight: normal;
+  margin-bottom: 105px;
+}
+
+.menu__button {
+  color: #fff;
+}
+
+.header__box {
+  display: flex;
+  gap: 0 73px;
+}
+
+.header__text {
+  width: 320px;
+  font-size: 24px;
+}
+
+.header__button-box {
+  margin-left: 94px;
+  background-image: url(../images/trailer_image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 20px 60px;
+  text-align: center;
+  width: 260px;
+}
+
+.header__button {
+  font-size: 17px;
+}
+
+/* ########################## The editor ############################### */
+
+.the-editor {
+  background-image: url(../images/editor_background.png);
+  background-size: cover;
+}
+.the-editor__header {
+  margin-bottom: 57px;
+  padding-top: 60px;
+  overflow: hidden;
+}
+.the-editor__sup-title {
+  position: relative;
+  color: #688c6b;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.the-editor__sup-title::after {
+  content: ""; /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
+  display: block; /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
+  width: 880px; /* устанавливаем ширину линию. Можно использовать произвольную ширину */
+  position: absolute; /* абсолютное позиционирование для управления линиями */
+  border-bottom: 2px solid #fff; /* бордер псевдо дива, т.е. сама линия */
+  top: 40%; /* позиционирование по вертикали */
+  left: 250px;
+}
+
+.the-editor__title {
+  margin-bottom: 28px;
+  color: #7ea5b5;
+  font-size: 57px;
+  line-height: 62px;
+  letter-spacing: 3px;
+}
+.the-editor__text {
+  margin-bottom: 167px;
+  max-width: 930px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 55px;
+}
+.the-editor__img {
+  width: 100%;
+  margin-bottom: 60px;
+}
